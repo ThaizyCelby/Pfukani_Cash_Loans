@@ -1,0 +1,2245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pfukani Cash Loans | NCR Registered Credit Provider (NCRCP17495)</title>
+<meta name="description" content="Pfukani Cash Loans — NCR registered credit provider. Affordable loans from R200 to R10,000 over 1, 2 or 3 months, with NCA-capped interest and full written disclosure." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<style>
+  :root{
+    --indigo:#6366f1;
+    --violet:#8b5cf6;
+    --purple:#a855f7;
+    --fuchsia:#d946ef;
+    --pink:#ec4899;
+    --cyan:#22d3ee;
+    --teal:#2dd4bf;
+    --lime:#a3e635;
+    --yellow:#facc15;
+    --bg:#fbfaff;
+    --ink:#14082b;
+    --ink-2:#1e0d3d;
+    --body:#4a4363;
+    --muted:#8a84a3;
+    --line:#ece8f8;
+    --grad:linear-gradient(135deg,#6366f1 0%,#a855f7 45%,#ec4899 100%);
+    --grad-soft:linear-gradient(135deg,#eef2ff 0%,#fae8ff 50%,#fce7f3 100%);
+    --grad-cool:linear-gradient(135deg,#22d3ee 0%,#6366f1 100%);
+  }
+
+  *{ -webkit-tap-highlight-color:transparent; }
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--body);
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .font-display{ font-family:'Sora',system-ui,sans-serif; letter-spacing:-0.03em; }
+
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 1.25rem; }
+  @media(min-width:640px){ .wrap{ padding:0 2rem; } }
+
+  /* ---------- Gradient text ---------- */
+  .grad-text{
+    background:var(--grad);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:gradShift 6s ease infinite;
+  }
+  .grad-text-light{
+    background:linear-gradient(120deg,#c4b5fd 0%,#f0abfc 45%,#f9a8d4 100%);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:gradShift 6s ease infinite;
+  }
+  @keyframes gradShift{
+    0%,100%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn-primary{
+    background:var(--grad);
+    background-size:200% 200%;
+    color:#fff;
+    font-weight:600;
+    border-radius:9999px;
+    animation:gradShift 5s ease infinite;
+    box-shadow:0 12px 30px -12px rgba(139,92,246,.65);
+    transition:transform .25s cubic-bezier(.16,1,.3,1), box-shadow .25s ease;
+    position:relative;
+    overflow:hidden;
+  }
+  .btn-primary::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.35) 50%,transparent 80%);
+    transform:translateX(-120%);
+    transition:transform .7s ease;
+  }
+  .btn-primary:hover{ transform:translateY(-3px) scale(1.02); box-shadow:0 20px 44px -14px rgba(236,72,153,.6); }
+  .btn-primary:hover::after{ transform:translateX(120%); }
+
+  .btn-dark{
+    background:var(--ink);
+    color:#f3eeff;
+    font-weight:600;
+    border-radius:9999px;
+    transition:transform .25s cubic-bezier(.16,1,.3,1), background .25s ease;
+  }
+  .btn-dark:hover{ transform:translateY(-3px); background:var(--ink-2); }
+
+  .btn-outline{
+    background:rgba(255,255,255,.6);
+    border:1.5px solid var(--line);
+    color:var(--ink);
+    font-weight:600;
+    border-radius:9999px;
+    backdrop-filter:blur(8px);
+    transition:all .25s cubic-bezier(.16,1,.3,1);
+  }
+  .btn-outline:hover{
+    border-color:var(--violet);
+    color:var(--violet);
+    background:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 12px 28px -16px rgba(139,92,246,.5);
+  }
+
+  .btn-outline-light{
+    background:rgba(255,255,255,.08);
+    border:1.5px solid rgba(196,181,253,.35);
+    color:#f3eeff;
+    font-weight:600;
+    border-radius:9999px;
+    backdrop-filter:blur(8px);
+    transition:all .25s cubic-bezier(.16,1,.3,1);
+  }
+  .btn-outline-light:hover{
+    border-color:#c4b5fd;
+    background:rgba(196,181,253,.15);
+    transform:translateY(-3px);
+  }
+
+  /* ---------- Cards ---------- */
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:1.5rem;
+    transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease, border-color .35s ease;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 30px 60px -30px rgba(99,102,241,.35);
+    border-color:#ddd6fe;
+  }
+  .card-dark{
+    background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 100%);
+    border:1px solid rgba(196,181,253,.15);
+    border-radius:1.5rem;
+  }
+
+  /* Gradient border card */
+  .gcard{
+    position:relative;
+    background:#fff;
+    border-radius:1.5rem;
+    transition:transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+  }
+  .gcard::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    padding:2px;
+    border-radius:inherit;
+    background:var(--grad);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    opacity:.5;
+    transition:opacity .35s ease;
+    pointer-events:none;
+  }
+  .gcard:hover{ transform:translateY(-6px); box-shadow:0 30px 60px -30px rgba(139,92,246,.4); }
+  .gcard:hover::before{ opacity:1; }
+
+  /* ---------- Nav ---------- */
+  .site-header{
+    position:sticky; top:0; z-index:40;
+    background:rgba(251,250,255,.75);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(236,232,248,.8);
+  }
+  .nav-link{
+    position:relative;
+    color:var(--muted);
+    font-weight:500;
+    padding:.5rem .1rem;
+    font-size:13px;
+    background:none;
+    transition:color .2s ease;
+  }
+  .nav-link::after{
+    content:'';
+    position:absolute;
+    left:0; right:0; bottom:-2px;
+    height:2.5px;
+    border-radius:99px;
+    background:var(--grad);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .3s cubic-bezier(.16,1,.3,1);
+  }
+  .nav-link:hover{ color:var(--ink); }
+  .nav-link:hover::after{ transform:scaleX(1); }
+  .nav-link.nav-active{ color:var(--ink); font-weight:600; }
+  .nav-link.nav-active::after{ transform:scaleX(1); }
+
+  .m-nav{
+    width:100%; text-align:left;
+    padding:.85rem 1.1rem;
+    border-radius:.9rem;
+    color:var(--muted); font-weight:500;
+    font-size:14px;
+    transition:all .2s ease;
+  }
+  .m-nav:hover{ background:var(--grad-soft); color:var(--ink); }
+  .m-nav.nav-active{ background:var(--grad-soft); color:var(--violet); font-weight:600; }
+  .m-nav::after{ display:none; }
+
+  /* ---------- Blobs ---------- */
+  .blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.55;
+    pointer-events:none;
+    z-index:0;
+    animation:blobFloat 18s ease-in-out infinite;
+  }
+  .blob-1{ width:420px; height:420px; background:radial-gradient(circle,#a5b4fc,#818cf8); top:-120px; left:-120px; }
+  .blob-2{ width:380px; height:380px; background:radial-gradient(circle,#f0abfc,#e879f9); top:40px; right:-100px; animation-delay:-6s; }
+  .blob-3{ width:340px; height:340px; background:radial-gradient(circle,#fbcfe8,#f9a8d4); bottom:-140px; left:30%; animation-delay:-12s; }
+  @keyframes blobFloat{
+    0%,100%{ transform:translate(0,0) scale(1); }
+    33%{ transform:translate(40px,-30px) scale(1.12); }
+    66%{ transform:translate(-30px,25px) scale(.92); }
+  }
+
+  /* ---------- Range slider ---------- */
+  input[type="range"]{
+    -webkit-appearance:none;
+    appearance:none;
+    width:100%;
+    height:12px;
+    border-radius:9999px;
+    outline:none;
+    cursor:pointer;
+    background:linear-gradient(to right,#6366f1 0%,#a855f7 30%,#ece8f8 30%,#ece8f8 100%);
+    transition:filter .2s ease;
+  }
+  input[type="range"]:hover{ filter:brightness(1.03); }
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    appearance:none;
+    width:30px; height:30px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#6366f1,#ec4899);
+    border:4px solid #fff;
+    box-shadow:0 0 0 5px rgba(139,92,246,.18), 0 8px 20px rgba(139,92,246,.4);
+    transition:transform .18s ease;
+    cursor:grab;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover{ transform:scale(1.15); }
+  input[type="range"]::-webkit-slider-thumb:active{ cursor:grabbing; transform:scale(1.05); }
+  input[type="range"]::-moz-range-thumb{
+    width:24px; height:24px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#6366f1,#ec4899);
+    border:4px solid #fff;
+    box-shadow:0 0 0 5px rgba(139,92,246,.18), 0 8px 20px rgba(139,92,246,.4);
+    cursor:grab;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-a{ animation:slideDown .3s cubic-bezier(.16,1,.3,1) forwards; }
+  @keyframes slideDown{
+    from{ opacity:0; transform:translateY(-8px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .chev{ transition:transform .35s cubic-bezier(.16,1,.3,1), color .35s ease; }
+  .faq-open .chev{ transform:rotate(45deg); color:var(--violet); }
+  .faq-open{ color:var(--ink); }
+  .faq-q{ transition:color .2s ease; }
+  .faq-q:hover{ color:var(--violet); }
+
+  /* ---------- Page fade ---------- */
+  .page{ animation:pageIn .5s cubic-bezier(.16,1,.3,1) forwards; }
+  @keyframes pageIn{
+    from{ opacity:0; transform:translateY(16px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(34px);
+    transition:opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1);
+    will-change:opacity,transform;
+  }
+  .reveal.visible{ opacity:1; transform:translateY(0); }
+  .reveal-d1{ transition-delay:.08s; }
+  .reveal-d2{ transition-delay:.16s; }
+  .reveal-d3{ transition-delay:.24s; }
+  .reveal-d4{ transition-delay:.32s; }
+
+  /* ---------- Marquee ---------- */
+  .marquee-track{
+    display:flex;
+    width:max-content;
+    animation:marquee 32s linear infinite;
+  }
+  @keyframes marquee{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-50%); }
+  }
+
+  /* ---------- Floating card animation ---------- */
+  @keyframes floatCard{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-14px); }
+  }
+  .float-card{ animation:floatCard 6s ease-in-out infinite; }
+  .float-card-2{ animation:floatCard 6s ease-in-out infinite; animation-delay:-3s; }
+
+  /* ---------- Pills ---------- */
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    border-radius:9999px;
+    font-weight:600;
+    letter-spacing:.02em;
+    background:var(--grad-soft);
+    border:1px solid #e9d5ff;
+    color:var(--violet);
+    font-size:11px;
+    padding:.45rem 1rem;
+  }
+  .pill-dark{
+    background:rgba(196,181,253,.12);
+    border:1px solid rgba(196,181,253,.3);
+    color:#c4b5fd;
+  }
+
+  /* ---------- Label ---------- */
+  .eyebrow{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--violet);
+  }
+  .eyebrow-light{ color:#c4b5fd; }
+
+  /* ---------- Term buttons ---------- */
+  .term-btn{
+    border-radius:1rem;
+    border:1.5px solid var(--line);
+    background:#fff;
+    transition:all .25s cubic-bezier(.16,1,.3,1);
+  }
+  .term-btn:hover{ border-color:#c4b5fd; transform:translateY(-2px); }
+
+  /* ---------- Scrollbar ---------- */
+  ::-webkit-scrollbar{ width:11px; }
+  ::-webkit-scrollbar-track{ background:var(--bg); }
+  ::-webkit-scrollbar-thumb{
+    background:linear-gradient(180deg,#6366f1,#ec4899);
+    border-radius:9999px;
+    border:3px solid var(--bg);
+  }
+
+  /* ---------- Grid pattern ---------- */
+  .dot-grid{
+    background-image:radial-gradient(circle,rgba(139,92,246,.14) 1px,transparent 1px);
+    background-size:22px 22px;
+  }
+
+  /* ---------- Hero card glow ---------- */
+  .glow-card{
+    box-shadow:0 40px 80px -40px rgba(99,102,241,.5), 0 0 0 1px rgba(255,255,255,.6) inset;
+  }
+
+  /* ---------- Stat number ---------- */
+  .stat-num{ font-variant-numeric:tabular-nums; }
+
+  /* ---------- Animations for icons ---------- */
+  @keyframes pulse-ring{
+    0%{ transform:scale(.9); opacity:.7; }
+    70%{ transform:scale(1.4); opacity:0; }
+    100%{ opacity:0; }
+  }
+  .pulse-dot::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:inherit;
+    animation:pulse-ring 2s ease-out infinite;
+  }
+</style>
+</head>
+
+<body class="antialiased selection:bg-[#a855f7] selection:text-white">
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="wrap">
+    <div class="flex items-center justify-between h-[76px]">
+
+      <!-- Logo -->
+      <button onclick="navigateTo('home')" class="flex items-center gap-3 group focus:outline-none">
+        <div class="relative w-11 h-11 rounded-2xl flex items-center justify-center font-display text-lg font-bold text-white
+                    bg-gradient-to-br from-[#6366f1] via-[#a855f7] to-[#ec4899]
+                    shadow-[0_10px_24px_-10px_rgba(139,92,246,.8)]
+                    group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+          P
+        </div>
+        <div class="text-left leading-none">
+          <div class="font-display text-[18px] font-bold text-[#14082b] tracking-tight">Pfukani</div>
+          <div class="text-[9px] tracking-[0.28em] font-bold uppercase mt-1.5 text-[#8b5cf6]">Cash Loans</div>
+        </div>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-7">
+        <button data-nav="home"         onclick="navigateTo('home')"         class="nav-link">Home</button>
+        <button data-nav="about"        onclick="navigateTo('about')"        class="nav-link">About</button>
+        <button data-nav="loans"        onclick="navigateTo('loans')"        class="nav-link">Loans</button>
+        <button data-nav="how-it-works" onclick="navigateTo('how-it-works')" class="nav-link">Process</button>
+        <button data-nav="documents"    onclick="navigateTo('documents')"    class="nav-link">Documents</button>
+        <button data-nav="faqs"         onclick="navigateTo('faqs')"         class="nav-link">FAQs</button>
+        <button data-nav="contact"      onclick="navigateTo('contact')"      class="nav-link">Contact</button>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden md:flex items-center gap-2.5">
+        <a href="mailto:info@pfukanicashloans.co.za"
+           class="btn-outline inline-flex items-center gap-1.5 px-4 py-2.5 text-[12.5px]">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
+        </a>
+        <a id="headerWa" href="#" target="_blank" rel="noopener noreferrer"
+           class="btn-primary inline-flex items-center gap-1.5 px-4 py-2.5 text-[12.5px]">
+          <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> WhatsApp
+        </a>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button onclick="toggleMenu()" class="lg:hidden p-2.5 rounded-xl border border-[#ece8f8] text-[#4a4363] hover:bg-[#f3f0ff] transition-colors">
+        <i id="iconMenu" data-lucide="menu" class="w-5 h-5"></i>
+        <i id="iconClose" data-lucide="x" class="w-5 h-5 hidden"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-[#ece8f8] bg-white/95 backdrop-blur-xl px-5 pt-3 pb-5">
+    <div class="space-y-0.5">
+      <button data-nav="home"         onclick="navigateTo('home')"         class="m-nav">Home</button>
+      <button data-nav="about"        onclick="navigateTo('about')"        class="m-nav">About Us</button>
+      <button data-nav="loans"        onclick="navigateTo('loans')"        class="m-nav">Loan Options</button>
+      <button data-nav="how-it-works" onclick="navigateTo('how-it-works')" class="m-nav">Process</button>
+      <button data-nav="documents"    onclick="navigateTo('documents')"    class="m-nav">Documents</button>
+      <button data-nav="faqs"         onclick="navigateTo('faqs')"         class="m-nav">FAQs</button>
+      <button data-nav="contact"      onclick="navigateTo('contact')"      class="m-nav">Contact</button>
+    </div>
+
+    <div class="mt-4 pt-4 border-t border-[#ece8f8] grid grid-cols-2 gap-2.5">
+      <a id="mobileWa" href="#" target="_blank" rel="noopener noreferrer"
+         class="btn-primary flex items-center justify-center gap-1.5 py-3 text-[12px]">
+        <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> WhatsApp
+      </a>
+      <a href="mailto:info@pfukanicashloans.co.za"
+         class="btn-outline flex items-center justify-center gap-1.5 py-3 text-[12px]">
+        <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MAIN ===================== -->
+<main class="relative">
+
+  <!-- ============================================================ -->
+  <!-- ========================= HOME PAGE ======================== -->
+  <!-- ============================================================ -->
+  <div data-page="home" class="page">
+
+    <!-- ---------- HERO ---------- -->
+    <section class="relative overflow-hidden">
+      <!-- Background blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="absolute inset-0 dot-grid opacity-40 pointer-events-none"></div>
+
+      <div class="wrap relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center py-16 lg:py-24">
+
+          <!-- Copy -->
+          <div class="reveal">
+            <div class="pill">
+              <span class="relative flex w-2 h-2">
+                <span class="absolute inline-flex h-full w-full rounded-full bg-[#a855f7] opacity-75 animate-ping"></span>
+                <span class="relative inline-flex rounded-full w-2 h-2 bg-[#a855f7]"></span>
+              </span>
+              NCR Registered · NCRCP17495
+            </div>
+
+            <h1 class="font-display mt-6 text-[2.6rem] leading-[1.05] sm:text-5xl lg:text-[3.7rem] font-bold text-[#14082b]">
+              Affordable credit,<br />
+              <span class="grad-text">on clear terms.</span>
+            </h1>
+
+            <p class="mt-6 text-[15px] sm:text-base text-[#4a4363] max-w-lg leading-relaxed">
+              Borrow between <strong class="text-[#14082b] font-semibold">R200</strong> and
+              <strong class="text-[#14082b] font-semibold">R10,000</strong>, repaid over
+              <strong class="text-[#14082b] font-semibold">1, 2 or 3 months</strong>.
+              Interest is charged at affordable, NCA-capped rates — and disclosed in writing
+              before you sign anything.
+            </p>
+
+            <!-- Mini spec row -->
+            <div class="mt-8 grid grid-cols-3 gap-3 max-w-md">
+              <div class="gcard p-3.5 text-center">
+                <div class="font-display text-xl font-bold grad-text">R200</div>
+                <div class="text-[9.5px] uppercase tracking-wider text-[#8a84a3] mt-1 font-semibold">Min loan</div>
+              </div>
+              <div class="gcard p-3.5 text-center">
+                <div class="font-display text-xl font-bold grad-text">R10K</div>
+                <div class="text-[9.5px] uppercase tracking-wider text-[#8a84a3] mt-1 font-semibold">Max loan</div>
+              </div>
+              <div class="gcard p-3.5 text-center">
+                <div class="font-display text-xl font-bold grad-text">1–3</div>
+                <div class="text-[9.5px] uppercase tracking-wider text-[#8a84a3] mt-1 font-semibold">Months</div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a id="heroWa" href="#" target="_blank" rel="noopener noreferrer"
+                 class="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[13.5px]">
+                <i data-lucide="smartphone" class="w-4 h-4"></i> Enquire on WhatsApp
+              </a>
+              <button onclick="navigateTo('loans')"
+                 class="btn-outline inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[13.5px]">
+                <i data-lucide="calculator" class="w-4 h-4"></i> Estimate a repayment
+              </button>
+            </div>
+
+            <p class="mt-6 flex items-center gap-2 text-[11.5px] text-[#8a84a3]">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-[#8b5cf6]"></i>
+              No online document uploads. Ever.
+            </p>
+          </div>
+
+          <!-- Visual composition -->
+          <div class="relative reveal reveal-d2">
+            <div class="relative rounded-[2rem] overflow-hidden glow-card">
+              <img
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80"
+                alt="Professional financial consultant"
+                class="w-full h-[380px] sm:h-[440px] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#14082b]/70 via-transparent to-[#6366f1]/10"></div>
+
+              <!-- Floating chip top-left -->
+              <div class="float-card absolute top-5 left-5 bg-white/90 backdrop-blur-xl rounded-2xl p-3.5 shadow-xl border border-white/60">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#22d3ee] to-[#6366f1] flex items-center justify-center">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-white"></i>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-bold text-[#14082b]">NCA Compliant</div>
+                    <div class="text-[9.5px] text-[#8a84a3]">Written quotation</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating chip bottom-right -->
+              <div class="float-card-2 absolute bottom-5 right-5 bg-white/90 backdrop-blur-xl rounded-2xl p-3.5 shadow-xl border border-white/60">
+                <div class="text-[9.5px] uppercase tracking-wider text-[#8a84a3] font-bold">Approx. monthly</div>
+                <div class="font-display text-2xl font-bold grad-text mt-0.5">R890</div>
+                <div class="text-[9.5px] text-[#8a84a3] mt-0.5">on R2,000 · 3 mo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- STAT BAND ---------- -->
+    <section class="relative z-10 -mt-4 pb-4">
+      <div class="wrap">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
+          <div class="card p-5 reveal">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center shadow-lg shadow-indigo-200">
+              <i data-lucide="shield-check" class="w-5 h-5 text-white"></i>
+            </div>
+            <div class="mt-3.5 font-semibold text-[#14082b] text-[13.5px]">NCR Registered</div>
+            <p class="text-[11.5px] text-[#8a84a3] mt-1 leading-snug">Authorised credit provider.</p>
+          </div>
+          <div class="card p-5 reveal reveal-d1">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center shadow-lg shadow-pink-200">
+              <i data-lucide="percent" class="w-5 h-5 text-white"></i>
+            </div>
+            <div class="mt-3.5 font-semibold text-[#14082b] text-[13.5px]">Affordable Interest</div>
+            <p class="text-[11.5px] text-[#8a84a3] mt-1 leading-snug">Capped by the NCA.</p>
+          </div>
+          <div class="card p-5 reveal reveal-d2">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#22d3ee] to-[#0ea5e9] flex items-center justify-center shadow-lg shadow-cyan-200">
+              <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
+            </div>
+            <div class="mt-3.5 font-semibold text-[#14082b] text-[13.5px]">Written Quotation</div>
+            <p class="text-[11.5px] text-[#8a84a3] mt-1 leading-snug">Every fee disclosed.</p>
+          </div>
+          <div class="card p-5 reveal reveal-d3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#a3e635] to-[#22c55e] flex items-center justify-center shadow-lg shadow-lime-200">
+              <i data-lucide="user-check" class="w-5 h-5 text-white"></i>
+            </div>
+            <div class="mt-3.5 font-semibold text-[#14082b] text-[13.5px]">Responsible Lending</div>
+            <p class="text-[11.5px] text-[#8a84a3] mt-1 leading-snug">Affordability assessed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- MARQUEE ---------- -->
+    <section class="mt-14 bg-gradient-to-r from-[#6366f1] via-[#a855f7] to-[#ec4899] py-4 overflow-hidden shadow-lg shadow-purple-200/50">
+      <div class="marquee-track">
+        <div class="flex items-center gap-9 px-6 shrink-0">
+          <span class="flex items-center gap-2 text-[11.5px] font-semibold text-white whitespace-nowrap"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> NCR Registered — NCRCP17495</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="percent" class="w-3.5 h-3.5"></i> NCA-Capped Interest</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="wallet" class="w-3.5 h-3.5"></i> R200 – R10,000</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 1, 2 or 3 Month Terms</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="lock" class="w-3.5 h-3.5"></i> POPIA Compliant</span>
+          <span class="text-white/40">·</span>
+        </div>
+        <div class="flex items-center gap-9 px-6 shrink-0" aria-hidden="true">
+          <span class="flex items-center gap-2 text-[11.5px] font-semibold text-white whitespace-nowrap"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> NCR Registered — NCRCP17495</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="percent" class="w-3.5 h-3.5"></i> NCA-Capped Interest</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="wallet" class="w-3.5 h-3.5"></i> R200 – R10,000</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 1, 2 or 3 Month Terms</span>
+          <span class="text-white/40">·</span>
+          <span class="flex items-center gap-2 text-[11.5px] font-medium text-white whitespace-nowrap"><i data-lucide="lock" class="w-3.5 h-3.5"></i> POPIA Compliant</span>
+          <span class="text-white/40">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- WHY : sticky heading + list ---------- -->
+    <section class="wrap py-20">
+      <div class="grid lg:grid-cols-12 gap-12">
+
+        <div class="lg:col-span-4 reveal">
+          <div class="lg:sticky lg:top-28">
+            <div class="eyebrow">Why Pfukani</div>
+            <h2 class="font-display mt-4 text-[2.2rem] leading-[1.12] font-bold text-[#14082b]">
+              Credit that respects<br /><span class="grad-text">your intelligence.</span>
+            </h2>
+            <p class="mt-4 text-[13.5px] text-[#8a84a3] leading-relaxed">
+              No jargon, no hidden fees, no pressure. Just a registered lender explaining the numbers
+              before you decide.
+            </p>
+            <div class="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#6366f1] to-[#ec4899]"></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8">
+          <div class="grid sm:grid-cols-2 gap-4">
+
+            <div class="card p-6 reveal reveal-d1">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#6366f1] to-[#8b5cf6] flex items-center justify-center text-white shadow-lg shadow-indigo-200">
+                <i data-lucide="scale" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-semibold text-[#14082b] text-[15px] mt-4">Registered &amp; regulated</h3>
+              <p class="mt-2 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Registered with the National Credit Regulator under NCRCP17495, operating strictly
+                within the National Credit Act.
+              </p>
+            </div>
+
+            <div class="card p-6 reveal reveal-d2">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center text-white shadow-lg shadow-pink-200">
+                <i data-lucide="percent" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-semibold text-[#14082b] text-[15px] mt-4">Affordable, capped interest</h3>
+              <p class="mt-2 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Interest never exceeds the legal maximum. Shorter terms cost less overall — we show
+                you the cheapest viable option.
+              </p>
+            </div>
+
+            <div class="card p-6 reveal reveal-d3">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#22d3ee] to-[#0ea5e9] flex items-center justify-center text-white shadow-lg shadow-cyan-200">
+                <i data-lucide="file-text" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-semibold text-[#14082b] text-[15px] mt-4">Everything in writing</h3>
+              <p class="mt-2 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Your quotation lists principal, interest, initiation fee, monthly service fee and
+                total repayable — before you sign.
+              </p>
+            </div>
+
+            <div class="card p-6 reveal reveal-d4">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#a3e635] to-[#22c55e] flex items-center justify-center text-white shadow-lg shadow-lime-200">
+                <i data-lucide="lock" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-semibold text-[#14082b] text-[15px] mt-4">POPIA-first data handling</h3>
+              <p class="mt-2 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                We do not collect documents through this website. Everything moves through verified,
+                direct channels only.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ESTIMATOR ---------- -->
+    <section class="relative overflow-hidden py-20" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#6366f1] opacity-25 blur-[90px] pointer-events-none"></div>
+      <div class="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full bg-[#ec4899] opacity-25 blur-[90px] pointer-events-none"></div>
+      <div class="absolute top-1/3 right-1/4 w-[260px] h-[260px] rounded-full bg-[#22d3ee] opacity-15 blur-[80px] pointer-events-none"></div>
+
+      <div class="wrap relative z-10">
+
+        <div class="max-w-2xl reveal">
+          <div class="eyebrow eyebrow-light">Repayment Estimator</div>
+          <h2 class="font-display mt-4 text-[2.2rem] sm:text-4xl leading-[1.1] font-bold text-[#faf8ff]">
+            See roughly what<br /><span class="grad-text-light">you'd repay.</span>
+          </h2>
+          <p class="mt-3 text-[13.5px] text-[#b8aed6] leading-relaxed max-w-lg">
+            Choose an amount and a term. Figures are illustrative and confirmed in your written quotation.
+          </p>
+        </div>
+
+        <div class="mt-10 grid lg:grid-cols-12 gap-5">
+
+          <!-- Controls -->
+          <div class="lg:col-span-7 bg-white rounded-[1.75rem] p-6 sm:p-8 shadow-2xl shadow-black/30 reveal">
+            <div>
+              <div class="flex items-end justify-between mb-4">
+                <label class="text-[10.5px] font-bold uppercase tracking-[0.18em] text-[#8a84a3]">Amount</label>
+                <span id="calcAmountLabel" class="font-display text-[2.6rem] leading-none font-bold grad-text">R3,000</span>
+              </div>
+              <input id="calcRange" type="range" min="200" max="10000" step="100" value="3000" aria-label="Loan amount" />
+              <div class="flex justify-between text-[10.5px] text-[#a9a3bd] font-mono mt-3">
+                <span>R200</span><span>R5,000</span><span>R10,000</span>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <label class="text-[10.5px] font-bold uppercase tracking-[0.18em] text-[#8a84a3] block mb-3">Term</label>
+              <div class="grid grid-cols-3 gap-2.5">
+                <button id="term1" onclick="setTerm(1)" class="term-btn px-3 py-3.5 text-center">
+                  <div class="text-[15px] font-semibold">1 Month</div>
+                  <div class="text-[10px] opacity-70 mt-0.5">Quickest</div>
+                </button>
+                <button id="term2" onclick="setTerm(2)" class="term-btn px-3 py-3.5 text-center">
+                  <div class="text-[15px] font-semibold">2 Months</div>
+                  <div class="text-[10px] opacity-70 mt-0.5">Balanced</div>
+                </button>
+                <button id="term3" onclick="setTerm(3)" class="term-btn px-3 py-3.5 text-center">
+                  <div class="text-[15px] font-semibold">3 Months</div>
+                  <div class="text-[10px] opacity-70 mt-0.5">Flexible</div>
+                </button>
+              </div>
+            </div>
+
+            <p class="mt-6 text-[10.5px] text-[#a9a3bd] leading-relaxed">
+              Illustrative only, based on NCA-capped rates. Your actual instalment is confirmed in
+              your written quotation after an affordability assessment.
+            </p>
+          </div>
+
+          <!-- Result -->
+          <div class="lg:col-span-5 card-dark p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden reveal reveal-d1">
+            <div class="absolute -top-16 -right-16 w-[220px] h-[220px] rounded-full bg-[#ec4899] opacity-20 blur-[60px]"></div>
+
+            <div class="relative">
+              <div class="text-[10.5px] font-bold uppercase tracking-[0.18em] text-[#b8aed6]">Estimated monthly instalment</div>
+              <div id="calcMonthly" class="font-display text-[3.1rem] leading-none font-bold grad-text-light mt-3">≈ R1,310</div>
+
+              <div class="mt-6 pt-5 border-t border-white/10 space-y-2.5 text-[12px]">
+                <div class="flex justify-between">
+                  <span class="text-[#b8aed6]">Amount</span>
+                  <span id="calcResultAmount" class="font-semibold text-white">R3,000</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-[#b8aed6]">Term</span>
+                  <span id="calcTermLabel" class="font-semibold text-white">3 Months</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-[#b8aed6]">Interest</span>
+                  <span class="font-semibold text-[#c4b5fd]">NCA capped</span>
+                </div>
+              </div>
+            </div>
+
+            <a id="calcWa" href="#" target="_blank" rel="noopener noreferrer"
+               class="btn-primary relative mt-7 w-full inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+              <i data-lucide="smartphone" class="w-4 h-4"></i>
+              <span id="calcWaLabel">Request written quotation</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- INTEREST EXPLAINER ---------- -->
+    <section class="wrap py-20">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+
+        <div class="lg:col-span-6 reveal">
+          <div class="eyebrow">Affordable Interest</div>
+          <h2 class="font-display mt-4 text-[2.2rem] leading-[1.12] font-bold text-[#14082b]">
+            Fair rates,<br /><span class="grad-text">fully explained.</span>
+          </h2>
+          <p class="mt-4 text-[13.5px] text-[#8a84a3] leading-relaxed">
+            Every rand we charge is regulated by the National Credit Act. There are no surprise charges
+            and no unapproved upfront processing fees — just a written quotation you can read at your
+            own pace.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center shrink-0 shadow-md shadow-indigo-200">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-[13.5px] font-semibold text-[#14082b]">Interest capped by law</h4>
+                <p class="text-[12px] text-[#8a84a3] mt-1">Charged at or below the NCA maximum prescribed rate.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center shrink-0 shadow-md shadow-pink-200">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-[13.5px] font-semibold text-[#14082b]">Shorter terms cost less</h4>
+                <p class="text-[12px] text-[#8a84a3] mt-1">Pick 1, 2 or 3 months — the shorter the term, the less you pay overall.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#22d3ee] to-[#0ea5e9] flex items-center justify-center shrink-0 shadow-md shadow-cyan-200">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-[13.5px] font-semibold text-[#14082b]">No hidden charges</h4>
+                <p class="text-[12px] text-[#8a84a3] mt-1">Initiation and monthly service fees are capped and disclosed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Worked example -->
+        <div class="lg:col-span-6 reveal reveal-d1">
+          <div class="gcard p-6 sm:p-7 shadow-xl shadow-purple-100">
+            <div class="flex items-center justify-between pb-4 border-b border-[#ece8f8]">
+              <h3 class="font-display text-[17px] font-bold text-[#14082b]">Worked example</h3>
+              <span class="text-[9.5px] font-bold uppercase tracking-widest text-[#8b5cf6] bg-[#f3f0ff] px-2.5 py-1 rounded-full">Illustrative</span>
+            </div>
+
+            <p class="mt-4 text-[12.5px] text-[#8a84a3]">
+              Borrowing <strong class="text-[#14082b]">R2,000</strong> over <strong class="text-[#14082b]">3 months</strong>:
+            </p>
+
+            <div class="mt-4 space-y-0.5 text-[12.5px]">
+              <div class="flex justify-between py-2 border-b border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Principal amount</span>
+                <span class="font-semibold text-[#14082b]">R2,000</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Interest (NCA capped)</span>
+                <span class="font-semibold text-[#14082b]">R300</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Initiation fee</span>
+                <span class="font-semibold text-[#14082b]">R200</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Monthly service fee</span>
+                <span class="font-semibold text-[#14082b]">R180</span>
+              </div>
+              <div class="flex justify-between py-3 bg-gradient-to-r from-[#f3f0ff] to-[#fce7f3] rounded-xl px-3 mt-2">
+                <span class="font-semibold text-[#14082b]">Total repayable</span>
+                <span class="font-bold text-[#14082b]">≈ R2,680</span>
+              </div>
+              <div class="flex justify-between py-3 bg-[#14082b] text-white rounded-xl px-3">
+                <span class="font-semibold">Monthly instalment</span>
+                <span class="font-bold text-[#c4b5fd]">≈ R890</span>
+              </div>
+            </div>
+
+            <p class="mt-4 text-[10px] text-[#a9a3bd] leading-relaxed">
+              * Illustrative only. Actual interest, fees and instalments depend on the agreement, the
+              term selected and your affordability assessment, and are confirmed in your written quotation.
+            </p>
+
+            <button onclick="navigateTo('loans')"
+              class="btn-dark w-full mt-5 inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+              <i data-lucide="calculator" class="w-4 h-4"></i> Estimate my repayment
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------- LOAN OPTIONS ---------- -->
+    <section class="relative py-20 overflow-hidden" style="background:linear-gradient(180deg,#f7f4ff 0%,#fdf2f8 100%);">
+      <div class="wrap relative z-10">
+
+        <div class="max-w-2xl reveal">
+          <div class="eyebrow">Loan Options</div>
+          <h2 class="font-display mt-4 text-[2.2rem] leading-[1.12] font-bold text-[#14082b]">
+            Three terms.<br /><span class="grad-text">One simple choice.</span>
+          </h2>
+          <p class="mt-3 text-[13.5px] text-[#8a84a3] leading-relaxed">
+            All options run from R200 to R10,000 and are subject to an affordability assessment.
+          </p>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-5">
+
+          <!-- Card 1 -->
+          <div class="gcard p-6 reveal reveal-d1 group">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#22d3ee] to-[#6366f1] flex items-center justify-center shadow-lg shadow-cyan-200">
+                <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#8a84a3]">01</span>
+            </div>
+            <h3 class="font-display text-[1.5rem] font-bold text-[#14082b] mt-5">1-Month term</h3>
+            <p class="text-[12.5px] text-[#8a84a3] mt-2 leading-relaxed">The quickest and cheapest option — settle in a single payment.</p>
+
+            <div class="mt-5 space-y-2 text-[11.5px]">
+              <div class="flex justify-between py-2 border-t border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Amount</span>
+                <span class="font-semibold text-[#14082b]">R200 – R10,000</span>
+              </div>
+              <div class="flex justify-between py-2 border-t border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Interest</span>
+                <span class="font-semibold text-[#8b5cf6]">NCA capped</span>
+              </div>
+            </div>
+
+            <a href="#" id="loansWa1" target="_blank" rel="noopener noreferrer"
+               class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-1.5 py-3 text-[12px]">
+              <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Enquire
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="gcard p-6 reveal reveal-d2 group md:-translate-y-2">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center shadow-lg shadow-indigo-200">
+                <i data-lucide="scale" class="w-5 h-5 text-white"></i>
+              </div>
+              <span class="text-[9px] font-bold uppercase tracking-widest text-white bg-gradient-to-r from-[#8b5cf6] to-[#ec4899] px-2.5 py-1 rounded-full">Popular</span>
+            </div>
+            <h3 class="font-display text-[1.5rem] font-bold text-[#14082b] mt-5">2-Month term</h3>
+            <p class="text-[12.5px] text-[#8a84a3] mt-2 leading-relaxed">A balanced split across two manageable instalments.</p>
+
+            <div class="mt-5 space-y-2 text-[11.5px]">
+              <div class="flex justify-between py-2 border-t border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Amount</span>
+                <span class="font-semibold text-[#14082b]">R200 – R10,000</span>
+              </div>
+              <div class="flex justify-between py-2 border-t border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Interest</span>
+                <span class="font-semibold text-[#8b5cf6]">NCA capped</span>
+              </div>
+            </div>
+
+            <a href="#" id="loansWa2" target="_blank" rel="noopener noreferrer"
+               class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-1.5 py-3 text-[12px]">
+              <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Enquire
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="gcard p-6 reveal reveal-d3 group">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center shadow-lg shadow-pink-200">
+                <i data-lucide="calendar" class="w-5 h-5 text-white"></i>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#8a84a3]">03</span>
+            </div>
+            <h3 class="font-display text-[1.5rem] font-bold text-[#14082b] mt-5">3-Month term</h3>
+            <p class="text-[12.5px] text-[#8a84a3] mt-2 leading-relaxed">The most flexible option, spread across three instalments.</p>
+
+            <div class="mt-5 space-y-2 text-[11.5px]">
+              <div class="flex justify-between py-2 border-t border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Amount</span>
+                <span class="font-semibold text-[#14082b]">R200 – R10,000</span>
+              </div>
+              <div class="flex justify-between py-2 border-t border-[#f4f0fb]">
+                <span class="text-[#8a84a3]">Interest</span>
+                <span class="font-semibold text-[#8b5cf6]">NCA capped</span>
+              </div>
+            </div>
+
+            <a href="#" id="loansWa3" target="_blank" rel="noopener noreferrer"
+               class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-1.5 py-3 text-[12px]">
+              <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Enquire
+            </a>
+          </div>
+
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 reveal">
+          <p class="text-[11.5px] text-[#8a84a3] max-w-xl leading-relaxed">
+            All terms are subject to formal verification, credit checks and an affordability assessment.
+            An enquiry is not an approval.
+          </p>
+          <button onclick="navigateTo('loans')" class="btn-outline inline-flex items-center gap-1.5 px-5 py-3 text-[12px] shrink-0">
+            Full loan details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- DOCUMENTS ---------- -->
+    <section class="wrap py-20">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-5 order-2 lg:order-1 reveal">
+          <div class="relative rounded-[1.75rem] overflow-hidden shadow-2xl shadow-purple-200/60 group">
+            <img
+              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80"
+              alt="Signing loan documentation"
+              class="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#14082b]/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <div class="inline-flex items-center gap-2 bg-white/90 backdrop-blur-xl rounded-xl px-3.5 py-2.5 shadow-lg">
+                <i data-lucide="shield-alert" class="w-4 h-4 text-[#8b5cf6]"></i>
+                <span class="text-[10.5px] text-[#14082b] font-semibold">Never upload documents to unverified forms.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 order-1 lg:order-2 reveal reveal-d1">
+          <div class="eyebrow">What you'll need</div>
+          <h2 class="font-display mt-4 text-[2.2rem] leading-[1.12] font-bold text-[#14082b]">
+            Three documents,<br /><span class="grad-text">that's all.</span>
+          </h2>
+          <p class="mt-3 text-[13.5px] text-[#8a84a3] max-w-lg leading-relaxed">
+            Have these ready before you start your enquiry. They are submitted securely through our
+            verified channels only.
+          </p>
+
+          <div class="mt-8 space-y-3">
+            <div class="card p-4 flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-md shadow-indigo-200">01</div>
+              <div>
+                <h3 class="font-semibold text-[#14082b] text-[14px]">6 months bank statements</h3>
+                <p class="text-[12px] text-[#8a84a3] mt-1">Official PDF statements showing regular income deposits.</p>
+              </div>
+            </div>
+
+            <div class="card p-4 flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-md shadow-pink-200">02</div>
+              <div>
+                <h3 class="font-semibold text-[#14082b] text-[14px]">Valid South African ID</h3>
+                <p class="text-[12px] text-[#8a84a3] mt-1">Green barcoded ID book or Smart ID card — clear and legible.</p>
+              </div>
+            </div>
+
+            <div class="card p-4 flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#22d3ee] to-[#0ea5e9] flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-md shadow-cyan-200">03</div>
+              <div>
+                <h3 class="font-semibold text-[#14082b] text-[14px]">Latest payslip</h3>
+                <p class="text-[12px] text-[#8a84a3] mt-1">Your most recent payslip or proof of income.</p>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="navigateTo('documents')"
+            class="btn-outline mt-8 inline-flex items-center gap-2 px-5 py-3 text-[12px]">
+            Full document instructions <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------- CTA ---------- -->
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(120deg,#6366f1 0%,#a855f7 50%,#ec4899 100%);">
+      <div class="absolute -top-20 -left-20 w-[300px] h-[300px] rounded-full bg-white/20 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[300px] h-[300px] rounded-full bg-[#22d3ee]/40 blur-[80px]"></div>
+
+      <div class="wrap relative z-10">
+        <div class="grid lg:grid-cols-12 gap-8 items-center reveal">
+
+          <div class="lg:col-span-7">
+            <h2 class="font-display text-[2.2rem] sm:text-[2.6rem] leading-[1.1] font-bold text-white">
+              Ready to talk it through?
+            </h2>
+            <p class="mt-3 text-[13.5px] text-white/85 leading-relaxed max-w-lg">
+              One WhatsApp message is all it takes to understand your options — no obligation, no pressure.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-3">
+            <a id="ctaWa" href="#" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-[13px] font-semibold bg-white text-[#14082b] shadow-xl shadow-black/20 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+              <i data-lucide="smartphone" class="w-4 h-4"></i> WhatsApp us
+            </a>
+            <a href="mailto:info@pfukanicashloans.co.za"
+               class="btn-outline-light inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[13px]">
+              <i data-lucide="mail" class="w-4 h-4"></i> Email us
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ======================== ABOUT PAGE ======================== -->
+  <!-- ============================================================ -->
+  <div data-page="about" class="page hidden">
+
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-[#6366f1] opacity-30 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[#ec4899] opacity-30 blur-[80px]"></div>
+      <div class="wrap relative z-10">
+        <div class="eyebrow eyebrow-light">Company Profile</div>
+        <h1 class="font-display mt-4 text-[2.5rem] sm:text-5xl leading-[1.05] font-bold text-white">
+          About <span class="grad-text-light">Pfukani</span>
+        </h1>
+        <p class="mt-4 text-[13.5px] text-[#b8aed6] max-w-xl leading-relaxed">
+          Responsible credit solutions in Giyani, Limpopo — built on clarity, compliance and
+          respect for the consumer.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap py-16">
+      <div class="grid lg:grid-cols-12 gap-12">
+
+        <div class="lg:col-span-7 space-y-6 reveal">
+          <div class="rounded-[1.75rem] overflow-hidden shadow-2xl shadow-purple-200/60">
+            <img
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=80"
+              alt="Pfukani consultation team"
+              class="w-full h-[300px] object-cover" />
+          </div>
+
+          <p class="text-[13.5px] text-[#8a84a3] leading-relaxed">
+            <strong class="text-[#14082b]">Pfukani Cash Loans</strong> is an authorised South African
+            credit provider registered with the National Credit Regulator under
+            <strong class="grad-text">NCRCP17495</strong>. From Stand No. 601, Maphata Village,
+            Giyani, we serve customers with short-term financial options from R200 to R10,000.
+          </p>
+
+          <p class="text-[13.5px] text-[#8a84a3] leading-relaxed">
+            Our commitment is built on transparent pricing, adherence to the National Credit Act,
+            affordable interest rates and responsible lending practices designed to assist customers
+            without creating unsustainable debt.
+          </p>
+
+          <div class="card p-6">
+            <h4 class="text-[10.5px] font-bold uppercase tracking-[0.18em] text-[#8b5cf6] mb-4">Core principles</h4>
+            <ul class="space-y-3 text-[12.5px] text-[#8a84a3]">
+              <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 text-[#8b5cf6] mt-0.5 shrink-0"></i> Strict compliance with NCA statutory rate caps</li>
+              <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 text-[#8b5cf6] mt-0.5 shrink-0"></i> Full pre-agreement disclosure via written quotation</li>
+              <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 text-[#8b5cf6] mt-0.5 shrink-0"></i> Thorough credit checks and affordability assessments</li>
+              <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 text-[#8b5cf6] mt-0.5 shrink-0"></i> POPIA-compliant data handling standards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal reveal-d1">
+          <div class="gcard p-6 sm:p-7 lg:sticky lg:top-28">
+            <h3 class="font-display text-[17px] font-bold text-[#14082b] pb-4 border-b border-[#ece8f8]">Business information</h3>
+
+            <div class="mt-5 space-y-4 text-[12px]">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center shrink-0">
+                  <i data-lucide="building-2" class="w-3.5 h-3.5 text-white"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-[#a9a3bd] font-semibold block">Registered name</span>
+                  <span class="font-semibold text-[#14082b]">Pfukani Cash Loans</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center shrink-0">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-white"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-[#a9a3bd] font-semibold block">NCR registration</span>
+                  <span class="font-semibold text-[#14082b]">NCRCP17495</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#22d3ee] to-[#0ea5e9] flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-white"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-[#a9a3bd] font-semibold block">Physical address</span>
+                  <span class="font-semibold text-[#14082b]">Stand No. 601, Maphata Village, Giyani, 0826</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#a3e635] to-[#22c55e] flex items-center justify-center shrink-0">
+                  <i data-lucide="smartphone" class="w-3.5 h-3.5 text-white"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-[#a9a3bd] font-semibold block">WhatsApp</span>
+                  <span class="font-semibold text-[#14082b]">063 036 0726 (+27 63 036 0726)</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#facc15] to-[#f97316] flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-3.5 h-3.5 text-white"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-[#a9a3bd] font-semibold block">Email</span>
+                  <span class="font-semibold text-[#14082b] break-all">info@pfukanicashloans.co.za</span>
+                </div>
+              </div>
+            </div>
+
+            <a id="aboutWa" href="#" target="_blank" rel="noopener noreferrer"
+               class="btn-primary w-full mt-6 inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+              <i data-lucide="smartphone" class="w-4 h-4"></i> Start a WhatsApp enquiry
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Values -->
+      <div class="mt-14 grid sm:grid-cols-3 gap-4">
+        <div class="card p-7 reveal">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center shadow-lg shadow-indigo-200">
+            <i data-lucide="eye" class="w-5 h-5 text-white"></i>
+          </div>
+          <h3 class="font-display text-[16px] font-bold text-[#14082b] mt-3.5">Transparency</h3>
+          <p class="text-[12px] text-[#8a84a3] mt-1.5 leading-relaxed">Every cost is disclosed in writing before you commit.</p>
+        </div>
+        <div class="card p-7 reveal reveal-d1">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center shadow-lg shadow-pink-200">
+            <i data-lucide="briefcase" class="w-5 h-5 text-white"></i>
+          </div>
+          <h3 class="font-display text-[16px] font-bold text-[#14082b] mt-3.5">Professionalism</h3>
+          <p class="text-[12px] text-[#8a84a3] mt-1.5 leading-relaxed">Direct consultation with trained, compliant staff.</p>
+        </div>
+        <div class="card p-7 reveal reveal-d2">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#22d3ee] to-[#0ea5e9] flex items-center justify-center shadow-lg shadow-cyan-200">
+            <i data-lucide="trending-up" class="w-5 h-5 text-white"></i>
+          </div>
+          <h3 class="font-display text-[16px] font-bold text-[#14082b] mt-3.5">Financial dignity</h3>
+          <p class="text-[12px] text-[#8a84a3] mt-1.5 leading-relaxed">We'd rather decline than over-indebt a client.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ======================== LOANS PAGE ======================== -->
+  <!-- ============================================================ -->
+  <div data-page="loans" class="page hidden">
+
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-[#6366f1] opacity-30 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[#ec4899] opacity-30 blur-[80px]"></div>
+      <div class="wrap relative z-10">
+        <div class="eyebrow eyebrow-light">Credit Structures</div>
+        <h1 class="font-display mt-4 text-[2.5rem] sm:text-5xl leading-[1.05] font-bold text-white">
+          Loan options &amp; <span class="grad-text-light">disclosure</span>
+        </h1>
+        <p class="mt-4 text-[13.5px] text-[#b8aed6] max-w-2xl leading-relaxed">
+          Borrow from R200 to R10,000 and choose a 1, 2 or 3 month repayment term. Interest is
+          charged at affordable, NCA-capped rates and disclosed in writing before you sign.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap py-16">
+
+      <!-- Range banner -->
+      <div class="rounded-[1.75rem] overflow-hidden relative shadow-2xl shadow-purple-200/60 reveal">
+        <img
+          src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80"
+          alt="Financial planning"
+          class="w-full h-[200px] sm:h-[240px] object-cover" />
+        <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(20,8,43,.95) 0%,rgba(43,16,85,.6) 55%,transparent 100%);"></div>
+        <div class="absolute inset-0 flex items-center px-6 sm:px-10">
+          <div>
+            <div class="font-display text-[1.6rem] sm:text-[1.9rem] font-bold text-white">Loan range: R200 – R10,000</div>
+            <p class="text-[12px] text-white/80 mt-1.5 max-w-md">Repayment terms of 1, 2 or 3 months, subject to affordability assessment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Term cards -->
+      <div class="mt-10 grid md:grid-cols-3 gap-5">
+
+        <div class="gcard p-6 reveal">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#22d3ee] to-[#6366f1] flex items-center justify-center shadow-lg shadow-cyan-200">
+              <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-[#8a84a3]">01</span>
+          </div>
+          <h3 class="font-display text-[1.5rem] font-bold text-[#14082b] mt-5">1-Month term</h3>
+          <p class="text-[12.5px] text-[#8a84a3] mt-2 leading-relaxed">Settle in a single payment. Lowest total cost of credit.</p>
+          <div class="mt-5 space-y-2 text-[11.5px]">
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Amount range</span><span class="font-semibold text-[#14082b]">R200 – R10,000</span></div>
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Interest</span><span class="font-semibold text-[#8b5cf6]">NCA capped</span></div>
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Assessment</span><span class="font-semibold text-[#14082b]">Required</span></div>
+          </div>
+          <a href="#" id="loansPageWa1" target="_blank" rel="noopener noreferrer"
+             class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-1.5 py-3 text-[12px]">
+            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Enquire
+          </a>
+        </div>
+
+        <div class="gcard p-6 reveal reveal-d1 md:-translate-y-2">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center shadow-lg shadow-indigo-200">
+              <i data-lucide="scale" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-[9px] font-bold uppercase tracking-widest text-white bg-gradient-to-r from-[#8b5cf6] to-[#ec4899] px-2.5 py-1 rounded-full">Popular</span>
+          </div>
+          <h3 class="font-display text-[1.5rem] font-bold text-[#14082b] mt-5">2-Month term</h3>
+          <p class="text-[12.5px] text-[#8a84a3] mt-2 leading-relaxed">Split the repayment across two instalments.</p>
+          <div class="mt-5 space-y-2 text-[11.5px]">
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Amount range</span><span class="font-semibold text-[#14082b]">R200 – R10,000</span></div>
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Interest</span><span class="font-semibold text-[#8b5cf6]">NCA capped</span></div>
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Assessment</span><span class="font-semibold text-[#14082b]">Required</span></div>
+          </div>
+          <a href="#" id="loansPageWa2" target="_blank" rel="noopener noreferrer"
+             class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-1.5 py-3 text-[12px]">
+            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Enquire
+          </a>
+        </div>
+
+        <div class="gcard p-6 reveal reveal-d2">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] flex items-center justify-center shadow-lg shadow-pink-200">
+              <i data-lucide="calendar" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-[#8a84a3]">03</span>
+          </div>
+          <h3 class="font-display text-[1.5rem] font-bold text-[#14082b] mt-5">3-Month term</h3>
+          <p class="text-[12.5px] text-[#8a84a3] mt-2 leading-relaxed">The most flexible option, spread across three instalments.</p>
+          <div class="mt-5 space-y-2 text-[11.5px]">
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Amount range</span><span class="font-semibold text-[#14082b]">R200 – R10,000</span></div>
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Interest</span><span class="font-semibold text-[#8b5cf6]">NCA capped</span></div>
+            <div class="flex justify-between py-2 border-t border-[#f4f0fb]"><span class="text-[#8a84a3]">Assessment</span><span class="font-semibold text-[#14082b]">Required</span></div>
+          </div>
+          <a href="#" id="loansPageWa3" target="_blank" rel="noopener noreferrer"
+             class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-1.5 py-3 text-[12px]">
+            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Enquire
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Notes -->
+      <div class="mt-10 grid md:grid-cols-2 gap-5">
+        <div class="card p-6 reveal">
+          <h4 class="text-[10.5px] font-bold uppercase tracking-[0.18em] text-[#8b5cf6] flex items-center gap-2">
+            <i data-lucide="percent" class="w-3.5 h-3.5"></i> Affordable interest
+          </h4>
+          <p class="mt-3 text-[12.5px] text-[#8a84a3] leading-relaxed">
+            Interest is charged at rates capped by the National Credit Act — never above the legal
+            maximum. Shorter terms mean less interest overall, so choose the shortest term you can
+            comfortably afford.
+          </p>
+        </div>
+
+        <div class="card p-6 bg-gradient-to-br from-[#fff7ed] to-[#fef3c7] border-[#fed7aa] reveal reveal-d1">
+          <h4 class="text-[10.5px] font-bold uppercase tracking-[0.18em] text-[#c2410c] flex items-center gap-2">
+            <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i> Statutory rate disclosure
+          </h4>
+          <p class="mt-3 text-[12.5px] text-[#92400e]/80 leading-relaxed">
+            Interest rates and applicable fees will be disclosed in your personalised quotation before
+            you enter into a credit agreement. Pfukani Cash Loans does not charge unapproved upfront
+            processing fees. All terms are subject to formal verification and credit review.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ===================== HOW IT WORKS PAGE ==================== -->
+  <!-- ============================================================ -->
+  <div data-page="how-it-works" class="page hidden">
+
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-[#6366f1] opacity-30 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[#ec4899] opacity-30 blur-[80px]"></div>
+      <div class="wrap relative z-10">
+        <div class="eyebrow eyebrow-light">Process Overview</div>
+        <h1 class="font-display mt-4 text-[2.5rem] sm:text-5xl leading-[1.05] font-bold text-white">
+          How it <span class="grad-text-light">works</span>
+        </h1>
+        <p class="mt-4 text-[13.5px] text-[#b8aed6] max-w-xl leading-relaxed">
+          A simple, compliant seven-step process from first enquiry to final agreement.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap py-16">
+      <div class="grid lg:grid-cols-12 gap-12">
+
+        <div class="lg:col-span-7 reveal">
+          <div class="relative">
+            <!-- vertical gradient line -->
+            <div class="absolute left-5 top-2 bottom-2 w-0.5 rounded-full" style="background:linear-gradient(180deg,#22d3ee,#6366f1,#a855f7,#ec4899);"></div>
+
+            <div class="space-y-5">
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 border-[#22d3ee] text-[#0ea5e9] flex items-center justify-center text-[12px] font-bold shadow-lg shadow-cyan-100">1</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Review the requirements</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Check the 1, 2 and 3-month options and make sure you have the three documents ready.</p>
+                </div>
+              </div>
+
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 border-[#6366f1] text-[#6366f1] flex items-center justify-center text-[12px] font-bold shadow-lg shadow-indigo-100">2</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Contact us</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Message us on WhatsApp (+27 63 036 0726) or send an email.</p>
+                </div>
+              </div>
+
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2-[#a855f7] text-[#a855f7] flex items-center justify-center text-[12px] font-bold shadow-lg shadow-purple-100" style="border-color:#a855f7;">3</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Submit documents securely</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Send bank statements, SA ID and payslip through our verified channels only.</p>
+                </div>
+              </div>
+
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 flex items-center justify-center text-[12px] font-bold shadow-lg shadow-pink-100" style="border-color:#d946ef; color:#d946ef;">4</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Affordability assessment</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Mandatory credit and affordability checks required by the NCA.</p>
+                </div>
+              </div>
+
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 flex items-center justify-center text-[12px] font-bold shadow-lg shadow-pink-100" style="border-color:#ec4899; color:#ec4899;">5</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Receive your written quotation</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Full breakdown of principal, affordable interest, initiation fee, monthly service fee and total payable.</p>
+                </div>
+              </div>
+
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 flex items-center justify-center text-[12px] font-bold shadow-lg shadow-lime-100" style="border-color:#22c55e; color:#22c55e;">6</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Review &amp; sign</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Read the agreement carefully. Sign only when you're fully satisfied.</p>
+                </div>
+              </div>
+
+              <div class="relative pl-16">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 flex items-center justify-center text-[12px] font-bold shadow-lg shadow-yellow-100" style="border-color:#facc15; color:#ca8a04;">7</div>
+                <div class="card p-4">
+                  <h3 class="font-semibold text-[#14082b] text-[14px]">Disbursement &amp; repayments</h3>
+                  <p class="text-[12.5px] text-[#8a84a3] mt-1 leading-relaxed">Funds are transferred and monthly debit orders begin as agreed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal reveal-d1">
+          <div class="lg:sticky lg:top-28 space-y-5">
+            <div class="rounded-[1.75rem] overflow-hidden shadow-2xl shadow-purple-200/60">
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80"
+                alt="Agreement handshake"
+                class="w-full h-[260px] object-cover" />
+            </div>
+
+            <div class="card-dark p-7 relative overflow-hidden">
+              <div class="absolute -top-10 -right-10 w-[180px] h-[180px] rounded-full bg-[#ec4899] opacity-20 blur-[50px]"></div>
+              <h4 class="font-display text-[17px] font-bold text-white flex items-center gap-2 relative">
+                <i data-lucide="info" class="w-4 h-4 text-[#c4b5fd]"></i> Please note
+              </h4>
+              <p class="mt-2.5 text-[12.5px] text-[#b8aed6] leading-relaxed relative">
+                An enquiry is <strong class="text-white">not</strong> a credit approval, guarantee
+                of funds, or a binding agreement.
+              </p>
+              <a id="howWa" href="#" target="_blank" rel="noopener noreferrer"
+                 class="btn-primary relative w-full mt-5 inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+                <i data-lucide="smartphone" class="w-4 h-4"></i> Start step 1 now
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ====================== DOCUMENTS PAGE ====================== -->
+  <!-- ============================================================ -->
+  <div data-page="documents" class="page hidden">
+
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-[#6366f1] opacity-30 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[#22d3ee] opacity-25 blur-[80px]"></div>
+      <div class="wrap relative z-10">
+        <div class="eyebrow eyebrow-light">Verification Readiness</div>
+        <h1 class="font-display mt-4 text-[2.5rem] sm:text-5xl leading-[1.05] font-bold text-white">
+          Required <span class="grad-text-light">documents</span>
+        </h1>
+        <p class="mt-4 text-[13.5px] text-[#b8aed6] max-w-xl leading-relaxed">
+          Have these ready before you start your enquiry.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap py-16">
+
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="card p-7 reveal">
+          <div class="font-display text-[2.4rem] font-bold grad-text">01</div>
+          <h3 class="font-semibold text-[#14082b] text-[14px] mt-2">6 months bank statements</h3>
+          <p class="text-[12px] text-[#8a84a3] mt-2 leading-relaxed">Official PDF statements showing continuous income deposits over 180 days.</p>
+        </div>
+        <div class="card p-7 reveal reveal-d1">
+          <div class="font-display text-[2.4rem] font-bold grad-text">02</div>
+          <h3 class="font-semibold text-[#14082b] text-[14px] mt-2">Valid South African ID</h3>
+          <p class="text-[12px] text-[#8a84a3] mt-2 leading-relaxed">Green barcoded ID book or Smart ID card copy — clear and legible.</p>
+        </div>
+        <div class="card p-7 reveal reveal-d2">
+          <div class="font-display text-[2.4rem] font-bold grad-text">03</div>
+          <h3 class="font-semibold text-[#14082b] text-[14px] mt-2">Latest payslip</h3>
+          <p class="text-[12px] text-[#8a84a3] mt-2 leading-relaxed">Your most recent official payslip showing gross and net earnings.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-[1.75rem] overflow-hidden border border-[#ece8f8] bg-white shadow-xl shadow-purple-100/60 reveal">
+        <div class="grid md:grid-cols-2">
+          <div class="p-7 sm:p-9">
+            <h3 class="font-display text-[18px] font-bold text-[#14082b] flex items-center gap-2">
+              <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center">
+                <i data-lucide="lock" class="w-4 h-4 text-white"></i>
+              </div>
+              POPIA document rules
+            </h3>
+            <p class="mt-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+              Pfukani Cash Loans enforces strict data minimisation under the Protection of Personal
+              Information Act. Documents should only be transmitted when requested through direct
+              consultation with our verified personnel.
+            </p>
+            <ul class="mt-4 space-y-2.5 text-[12px] text-[#8a84a3]">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#8b5cf6] mt-0.5 shrink-0"></i> No web-based document upload forms</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#8b5cf6] mt-0.5 shrink-0"></i> Encrypted email &amp; verified WhatsApp only</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#8b5cf6] mt-0.5 shrink-0"></i> Zero persistent browser storage of personal data</li>
+            </ul>
+          </div>
+          <div class="relative min-h-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=80"
+              alt="Secure document handling"
+              class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0" style="background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.3) 40%,transparent 100%);"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 reveal">
+        <a id="docsWa" href="#" target="_blank" rel="noopener noreferrer"
+           class="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[13px]">
+          <i data-lucide="send" class="w-4 h-4"></i> Ask about document submission
+        </a>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ========================= FAQS PAGE ======================== -->
+  <!-- ============================================================ -->
+  <div data-page="faqs" class="page hidden">
+
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-[#6366f1] opacity-30 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[#ec4899] opacity-30 blur-[80px]"></div>
+      <div class="wrap relative z-10">
+        <div class="eyebrow eyebrow-light">Consumer Guidance</div>
+        <h1 class="font-display mt-4 text-[2.5rem] sm:text-5xl leading-[1.05] font-bold text-white">
+          Frequently asked <span class="grad-text-light">questions</span>
+        </h1>
+        <p class="mt-4 text-[13.5px] text-[#b8aed6] max-w-xl leading-relaxed">
+          Clear answers about credit terms, affordable interest, compliance and early settlement.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap py-16">
+      <div class="grid lg:grid-cols-12 gap-12">
+
+        <div class="lg:col-span-7 reveal">
+          <div class="bg-white rounded-[1.75rem] border border-[#ece8f8] p-2 sm:p-3 shadow-lg shadow-purple-100/50" id="faqList">
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>What documents are required?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                You require 6 months of official bank statements, a valid South African Green Barcoded ID or Smart ID card, and your latest payslip.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>What repayment terms do you offer?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                We offer short-term repayment periods of 1 month, 2 months or 3 months. The shorter the term, the less interest you pay overall.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>How much can I borrow?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Loans range from R200 up to R10,000. The exact amount available to you depends on your affordability assessment.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>Are your interest rates affordable?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Yes. Interest is charged at rates capped by the National Credit Act — never above the legal maximum. Every rate and fee is disclosed in your written quotation before you sign.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>What fees may apply?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Permitted charges include an initiation fee (upfront or incorporated into the loan) and a monthly service fee capped by NCA regulations.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>How do I contact Pfukani Cash Loans?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                WhatsApp us at 063 036 0726 (+27 63 036 0726) or email info@pfukanicashloans.co.za.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>Is loan approval guaranteed?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                No. All approvals are subject to mandatory credit checks, identity verification, and affordability assessments.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>What if I settle my loan early?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Under Section 125 of the National Credit Act, you may request an early settlement quotation. Once paid, applicable debit orders will be cancelled.
+              </div>
+            </div>
+
+            <div class="border-b border-[#f4f0fb] last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>What if I pay late?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                Overdue payments may attract default administration charges and interest as permitted under the NCA. Unpaid amounts may affect your credit rating.
+              </div>
+            </div>
+
+            <div class="last:border-0">
+              <button class="faq-q w-full text-left py-5 px-4 flex justify-between items-center gap-4 text-[13.5px] font-semibold text-[#14082b]">
+                <span>How is my information protected?</span>
+                <i data-lucide="plus" class="chev w-4 h-4 text-[#a9a3bd] shrink-0"></i>
+              </button>
+              <div class="faq-a hidden pb-5 px-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+                We adhere strictly to POPIA. We do not store financial documents on website servers or collect data via web forms.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal reveal-d1">
+          <div class="lg:sticky lg:top-28 space-y-5">
+            <div class="rounded-[1.75rem] overflow-hidden shadow-2xl shadow-purple-200/60">
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80"
+                alt="Consultation about loan terms"
+                class="w-full h-[240px] object-cover" />
+            </div>
+
+            <div class="card-dark p-7 relative overflow-hidden">
+              <div class="absolute -top-16 -right-16 w-[220px] h-[220px] rounded-full bg-[#6366f1] opacity-25 blur-[60px]"></div>
+              <div class="relative">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#22d3ee] to-[#6366f1] flex items-center justify-center">
+                  <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+                </div>
+                <h3 class="font-display text-[19px] font-bold text-white mt-4">Still curious?</h3>
+                <p class="text-[12.5px] text-[#b8aed6] mt-2 leading-relaxed">
+                  Ask us anything directly — no obligation, no pressure.
+                </p>
+                <a id="faqWa" href="#" target="_blank" rel="noopener noreferrer"
+                   class="btn-primary w-full mt-5 inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+                  <i data-lucide="smartphone" class="w-4 h-4"></i> WhatsApp us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ======================== CONTACT PAGE ====================== -->
+  <!-- ============================================================ -->
+  <div data-page="contact" class="page hidden">
+
+    <section class="relative overflow-hidden py-16" style="background:linear-gradient(160deg,#1e0d3d 0%,#2b1055 55%,#3b0f5e 100%);">
+      <div class="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-[#6366f1] opacity-30 blur-[80px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-[350px] h-[350px] rounded-full bg-[#ec4899] opacity-30 blur-[80px]"></div>
+      <div class="wrap relative z-10">
+        <div class="eyebrow eyebrow-light">Direct Support</div>
+        <h1 class="font-display mt-4 text-[2.5rem] sm:text-5xl leading-[1.05] font-bold text-white">
+          Contact <span class="grad-text-light">Pfukani</span>
+        </h1>
+        <p class="mt-4 text-[13.5px] text-[#b8aed6] max-w-xl leading-relaxed">
+          Reach our consultation team directly via WhatsApp or email.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap py-16">
+      <div class="grid md:grid-cols-2 gap-5">
+
+        <!-- Channels -->
+        <div class="gcard p-6 sm:p-7 reveal">
+          <h3 class="font-display text-[17px] font-bold text-[#14082b] pb-4 border-b border-[#ece8f8]">Official channels</h3>
+
+          <div class="mt-5 space-y-3">
+
+            <div class="rounded-xl border border-[#ece8f8] bg-gradient-to-br from-[#f7f4ff] to-[#fdf2f8] p-4">
+              <span class="text-[10px] uppercase tracking-wider font-bold text-[#8b5cf6] block mb-1.5">WhatsApp enquiries</span>
+              <div class="flex items-center justify-between gap-3">
+                <span class="text-[#14082b] font-mono text-[13px] font-semibold">+27 63 036 0726</span>
+                <button onclick="copyText('+27630360726','phone',this)"
+                        class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#8b5cf6] hover:text-[#6366f1] transition-colors">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="rounded-xl border border-[#ece8f8] bg-gradient-to-br from-[#f7f4ff] to-[#fdf2f8] p-4">
+              <span class="text-[10px] uppercase tracking-wider font-bold text-[#8b5cf6] block mb-1.5">Email address</span>
+              <div class="flex items-center justify-between gap-3">
+                <span class="text-[#14082b] font-mono text-[12px] font-semibold break-all">info@pfukanicashloans.co.za</span>
+                <button onclick="copyText('info@pfukanicashloans.co.za','email',this)"
+                        class="shrink-0 inline-flex items-center gap-1 text-[11px] font-semibold text-[#8b5cf6] hover:text-[#6366f1] transition-colors">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="rounded-xl border border-[#ece8f8] bg-gradient-to-br from-[#f7f4ff] to-[#fdf2f8] p-4">
+              <span class="text-[10px] uppercase tracking-wider font-bold text-[#8b5cf6] block mb-1.5">Physical location</span>
+              <span class="text-[#14082b] text-[12.5px] leading-relaxed block font-medium">Stand No. 601, Maphata Village, Giyani, 0826, South Africa</span>
+            </div>
+
+          </div>
+
+          <div class="mt-5 rounded-xl border border-[#fed7aa] bg-gradient-to-br from-[#fff7ed] to-[#fef3c7] p-4">
+            <p class="text-[11px] text-[#92400e] leading-relaxed flex items-start gap-2">
+              <i data-lucide="alert-triangle" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i>
+              Never send identity documents to any number or email that does not match the official details listed above.
+            </p>
+          </div>
+        </div>
+
+        <!-- Action -->
+        <div class="gcard p-6 sm:p-7 flex flex-col justify-between reveal reveal-d1">
+          <div>
+            <h3 class="font-display text-[17px] font-bold text-[#14082b] pb-4 border-b border-[#ece8f8]">Initiate consultation</h3>
+            <p class="mt-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+              Click below to generate a prefilled enquiry message on WhatsApp or send an email directly
+              to our team.
+            </p>
+
+            <div class="mt-5 rounded-xl overflow-hidden border border-[#ece8f8]">
+              <img
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80"
+                alt="Friendly consultant"
+                class="w-full h-[210px] object-cover" />
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-2.5">
+            <a id="contactWa" href="#" target="_blank" rel="noopener noreferrer"
+               class="btn-primary w-full inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+              <i data-lucide="smartphone" class="w-4 h-4"></i> Open WhatsApp consultation
+            </a>
+            <a href="mailto:info@pfukanicashloans.co.za"
+               class="btn-outline w-full inline-flex items-center justify-center gap-2 py-3.5 text-[12.5px]">
+              <i data-lucide="mail" class="w-4 h-4"></i> Send email message
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<a id="floatWa" href="#" target="_blank" rel="noopener noreferrer"
+   class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-2xl flex items-center justify-center
+          bg-gradient-to-br from-[#6366f1] via-[#a855f7] to-[#ec4899] text-white
+          shadow-2xl shadow-purple-400/50 ring-1 ring-white/30
+          hover:scale-110 hover:rotate-6 transition-transform duration-300"
+   aria-label="Chat on WhatsApp">
+  <i data-lucide="smartphone" class="w-5 h-5"></i>
+  <span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#22d3ee] border-2 border-white"></span>
+</a>
+
+<!-- ===================== MODAL ===================== -->
+<div id="securityModal" class="hidden fixed inset-0 z-50 bg-[#14082b]/80 backdrop-blur-md items-center justify-center p-4">
+  <div class="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[1.75rem] border border-[#ece8f8] bg-white p-6 sm:p-8 shadow-2xl page">
+
+    <div class="flex items-center justify-between pb-4 border-b border-[#ece8f8]">
+      <div class="flex items-center gap-2.5 font-display text-[17px] font-bold text-[#14082b]">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6366f1] to-[#a855f7] flex items-center justify-center">
+          <i data-lucide="lock" class="w-4 h-4 text-white"></i>
+        </div>
+        POPIA &amp; security assurance
+      </div>
+      <button onclick="closeModal()" class="p-2 rounded-xl text-[#a9a3bd] hover:text-[#14082b] hover:bg-[#f3f0ff] transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div class="mt-5 space-y-4 text-[12.5px] text-[#8a84a3] leading-relaxed">
+      <h4 class="font-semibold text-[#14082b] text-[13.5px]">Data privacy standards (POPIA)</h4>
+      <p>
+        Pfukani Cash Loans operates in strict alignment with the Protection of Personal Information Act
+        4 of 2013 (POPIA). This website does not process, store, or transmit sensitive financial or
+        personal identity documents through web-based application forms.
+      </p>
+
+      <h4 class="font-semibold text-[#14082b] text-[13.5px] pt-2">NCR regulatory disclaimer</h4>
+      <p>
+        Registration number <strong class="grad-text">NCRCP17495</strong> is provided as supplied
+        by the business. Registration status and compliance parameters must be verified prior to formal
+        credit execution.
+      </p>
+
+      <div class="rounded-xl border border-[#ece8f8] bg-gradient-to-br from-[#f7f4ff] to-[#fdf2f8] p-4 space-y-2 text-[11.5px]">
+        <span class="font-bold text-[#14082b] block">Security implementations:</span>
+        <ul class="space-y-1.5">
+          <li class="flex items-start gap-2"><i data-lucide="check" class="w-3 h-3 text-[#8b5cf6] mt-0.5 shrink-0"></i> Zero persistent browser storage of personal data</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="w-3 h-3 text-[#8b5cf6] mt-0.5 shrink-0"></i> Direct communication via secure client protocols</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="w-3 h-3 text-[#8b5cf6] mt-0.5 shrink-0"></i> Strict Content Security Policy (CSP) guidelines</li>
+          <li class="flex items-start gap-2"><i data-lucide="check" class="w-3 h-3 text-[#8b5cf6] mt-0.5 shrink-0"></i> HTTPS transport layer encryption in hosting environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <button onclick="closeModal()" class="btn-outline w-full mt-6 py-3.5 text-[12.5px]">
+      Close compliance notice
+    </button>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="relative overflow-hidden text-[#a9a3bd] text-[12px] pt-14 pb-8" style="background:linear-gradient(180deg,#14082b 0%,#1e0d3d 100%);">
+  <div class="absolute -top-32 left-1/4 w-[400px] h-[400px] rounded-full bg-[#6366f1] opacity-10 blur-[100px]"></div>
+  <div class="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full bg-[#ec4899] opacity-10 blur-[100px]"></div>
+
+  <div class="wrap relative z-10">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-9">
+
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#6366f1] via-[#a855f7] to-[#ec4899] text-white flex items-center justify-center font-display text-[15px] font-bold shadow-lg shadow-purple-900/50">P</div>
+          <span class="font-display text-[16px] font-bold text-white">Pfukani Cash Loans</span>
+        </div>
+        <p class="mt-4 text-[11.5px] leading-relaxed text-[#b8aed6]">
+          Authorised South African credit provider offering affordable loans from R200 to R10,000
+          over 1, 2 or 3 months.
+        </p>
+        <div class="mt-3 inline-flex items-center gap-1.5 text-[10.5px] font-semibold text-[#c4b5fd] border border-[#c4b5fd]/30 bg-[#c4b5fd]/10 px-2.5 py-1 rounded-full">
+          <i data-lucide="shield-check" class="w-3 h-3"></i> NCRCP17495
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-[10.5px] font-bold text-white uppercase tracking-[0.15em] mb-3.5">Navigation</h4>
+        <ul class="space-y-2 text-[#b8aed6]">
+          <li><button onclick="navigateTo('home')" class="hover:text-[#c4b5fd] transition-colors">Home</button></li>
+          <li><button onclick="navigateTo('about')" class="hover:text-[#c4b5fd] transition-colors">About us</button></li>
+          <li><button onclick="navigateTo('loans')" class="hover:text-[#c4b5fd] transition-colors">Loan options</button></li>
+          <li><button onclick="navigateTo('how-it-works')" class="hover:text-[#c4b5fd] transition-colors">Process</button></li>
+          <li><button onclick="navigateTo('documents')" class="hover:text-[#c4b5fd] transition-colors">Documents</button></li>
+          <li><button onclick="navigateTo('faqs')" class="hover:text-[#c4b5fd] transition-colors">FAQs</button></li>
+          <li><button onclick="navigateTo('contact')" class="hover:text-[#c4b5fd] transition-colors">Contact</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-[10.5px] font-bold text-white uppercase tracking-[0.15em] mb-3.5">Address</h4>
+        <p class="leading-relaxed text-[#b8aed6]">
+          Stand No. 601,<br />
+          Maphata Village,<br />
+          Giyani, 0826,<br />
+          South Africa
+        </p>
+
+        <div class="mt-4 space-y-1.5 text-[#b8aed6]">
+          <p class="flex items-center gap-2"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-[#c4b5fd]"></i> 063 036 0726</p>
+          <p class="flex items-center gap-2 break-all"><i data-lucide="mail" class="w-3.5 h-3.5 text-[#c4b5fd]"></i> info@pfukanicashloans.co.za</p>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-[10.5px] font-bold text-white uppercase tracking-[0.15em] mb-3.5">Legal &amp; compliance</h4>
+        <p class="text-[11px] leading-relaxed text-[#b8aed6]">
+          Lending is subject to credit approval and affordability assessment. Pfukani Cash Loans
+          complies with the National Credit Act 34 of 2005 and POPIA Act 4 of 2013.
+        </p>
+        <button onclick="openModal()" class="mt-3 text-[#c4b5fd] hover:underline text-[11px] block">
+          Security &amp; legal information
+        </button>
+        <a href="#" id="footerWa" target="_blank" rel="noopener noreferrer"
+           class="mt-4 inline-flex items-center gap-1.5 text-[11px] font-semibold text-white bg-gradient-to-r from-[#6366f1] to-[#ec4899] hover:brightness-110 px-3.5 py-2 rounded-full transition-all">
+          <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+    <div class="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-[10.5px] text-[#8a84a3]">
+      <div>© <span id="year"></span> Pfukani Cash Loans. All rights reserved.</div>
+      <div>NCR Registration Number: NCRCP17495</div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   CONFIG
+   ========================================================= */
+const PHONE = '27630360726';
+const DEFAULT_MSG =
+  "Good day, Pfukani Cash Loans. I would like to enquire about your 1-month, 2-month and 3-month loan options. Please explain the requirements, affordable interest rates and applicable costs.";
+
+function waUrl(msg){
+  return 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(msg || DEFAULT_MSG);
+}
+
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+function observeReveals(root = document){
+  root.querySelectorAll('.reveal:not(.visible)').forEach(el => revealObserver.observe(el));
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+function navigateTo(id){
+  document.querySelectorAll('[data-page]').forEach(p => {
+    p.classList.toggle('hidden', p.dataset.page !== id);
+    if(p.dataset.page === id){
+      p.classList.remove('page');
+      void p.offsetWidth;
+      p.classList.add('page');
+    }
+  });
+
+  document.querySelectorAll('[data-nav]').forEach(btn => {
+    btn.classList.toggle('nav-active', btn.dataset.nav === id);
+  });
+
+  closeMenu();
+
+  const page = document.querySelector('[data-page="' + id + '"]');
+  if(page){
+    page.querySelectorAll('.reveal').forEach(el => el.classList.remove('visible'));
+    void page.offsetWidth;
+    requestAnimationFrame(() => observeReveals(page));
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleMenu(){
+  const m = document.getElementById('mobileMenu');
+  const open = !m.classList.contains('hidden');
+  m.classList.toggle('hidden', open);
+  document.getElementById('iconMenu').classList.toggle('hidden', !open);
+  document.getElementById('iconClose').classList.toggle('hidden', open);
+}
+
+function closeMenu(){
+  document.getElementById('mobileMenu').classList.add('hidden');
+  document.getElementById('iconMenu').classList.remove('hidden');
+  document.getElementById('iconClose').classList.add('hidden');
+}
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+function openModal(){
+  const m = document.getElementById('securityModal');
+  m.classList.remove('hidden');
+  m.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  const m = document.getElementById('securityModal');
+  m.classList.add('hidden');
+  m.classList.remove('flex');
+  document.body.style.overflow = '';
+}
+document.getElementById('securityModal').addEventListener('click', function(e){
+  if(e.target === this) closeModal();
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') closeModal();
+});
+
+/* =========================================================
+   COPY
+   ========================================================= */
+function copyText(text, label, btn){
+  const done = () => {
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5"></i> Copied';
+    if(window.lucide) lucide.createIcons();
+    setTimeout(() => {
+      btn.innerHTML = original;
+      if(window.lucide) lucide.createIcons();
+    }, 2000);
+  };
+
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(done);
+  } else {
+    const t = document.createElement('textarea');
+    t.value = text;
+    document.body.appendChild(t);
+    t.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(t);
+    done();
+  }
+}
+
+/* =========================================================
+   CALCULATOR
+   ========================================================= */
+let calcAmount = 3000;
+let calcTerm = 3;
+
+function formatZAR(n){
+  return 'R' + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+function estimateMonthly(A, n){
+  const interest   = A * 0.05 * n;
+  const service    = 60 * n;
+  const initiation = Math.min(A * 0.10, 1050);
+  const total      = A + interest + service + initiation;
+  return Math.round((total / n) / 10) * 10;
+}
+
+function paintSlider(){
+  const range = document.getElementById('calcRange');
+  const min = Number(range.min);
+  const max = Number(range.max);
+  const pct = ((calcAmount - min) / (max - min)) * 100;
+  range.style.background =
+    'linear-gradient(to right, #6366f1 0%, #a855f7 ' + pct + '%, #ece8f8 ' + pct + '%, #ece8f8 100%)';
+}
+
+function styleTermButtons(){
+  [1,2,3].forEach(t => {
+    const btn = document.getElementById('term' + t);
+    if(!btn) return;
+    const active = calcTerm === t;
+    btn.className = 'term-btn px-3 py-3.5 text-center ' +
+      (active
+        ? 'bg-gradient-to-br from-[#6366f1] to-[#a855f7] text-white border-transparent shadow-lg shadow-indigo-300/50'
+        : 'bg-white text-[#8a84a3] border-[#ece8f8]');
+  });
+}
+
+function updateCalculator(){
+  document.getElementById('calcAmountLabel').textContent = formatZAR(calcAmount);
+  document.getElementById('calcResultAmount').textContent = formatZAR(calcAmount);
+  styleTermButtons();
+  paintSlider();
+
+  const monthly = estimateMonthly(calcAmount, calcTerm);
+  document.getElementById('calcMonthly').textContent = '≈ ' + formatZAR(monthly);
+  document.getElementById('calcTermLabel').textContent = calcTerm + (calcTerm === 1 ? ' Month' : ' Months');
+
+  document.getElementById('calcWaLabel').textContent =
+    'Request quotation for ' + formatZAR(calcAmount);
+
+  const msg =
+    'Good day, Pfukani Cash Loans. I am interested in a ' + calcTerm + '-month loan option for ' +
+    formatZAR(calcAmount) + '. Please guide me on the requirements, affordable interest and written quotation process.';
+
+  document.getElementById('calcWa').href = waUrl(msg);
+}
+
+function setTerm(t){
+  calcTerm = t;
+  updateCalculator();
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = btn.nextElementSibling;
+    const isOpen = !panel.classList.contains('hidden');
+
+    document.querySelectorAll('.faq-a').forEach(p => p.classList.add('hidden'));
+    document.querySelectorAll('.faq-q').forEach(b => b.classList.remove('faq-open'));
+
+    if(!isOpen){
+      panel.classList.remove('hidden');
+      btn.classList.add('faq-open');
+    }
+  });
+});
+
+/* =========================================================
+   INIT
+   ========================================================= */
+document.addEventListener('DOMContentLoaded', () => {
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const generic = waUrl();
+  ['headerWa','mobileWa','heroWa','ctaWa','aboutWa','howWa','docsWa','faqWa','contactWa','floatWa','footerWa']
+    .forEach(id => {
+      const el = document.getElementById(id);
+      if(el) el.href = generic;
+    });
+
+  const loan1 = waUrl('Good day, Pfukani Cash Loans. I am interested in a 1-month loan option. Please advise on requirements and affordable interest rates.');
+  const loan2 = waUrl('Good day, Pfukani Cash Loans. I am interested in a 2-month loan option. Please advise on requirements and affordable interest rates.');
+  const loan3 = waUrl('Good day, Pfukani Cash Loans. I am interested in a 3-month loan option. Please advise on requirements and affordable interest rates.');
+
+  ['loansWa1','loansPageWa1'].forEach(id => { const el = document.getElementById(id); if(el) el.href = loan1; });
+  ['loansWa2','loansPageWa2'].forEach(id => { const el = document.getElementById(id); if(el) el.href = loan2; });
+  ['loansWa3','loansPageWa3'].forEach(id => { const el = document.getElementById(id); if(el) el.href = loan3; });
+
+  const range = document.getElementById('calcRange');
+  range.addEventListener('input', e => {
+    calcAmount = Number(e.target.value);
+    updateCalculator();
+  });
+
+  updateCalculator();
+  navigateTo('home');
+  observeReveals();
+
+  if(window.lucide) lucide.createIcons();
+});
+</script>
+
+</body>
+</html>
