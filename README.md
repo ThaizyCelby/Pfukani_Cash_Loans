@@ -1,6 +1,9 @@
-# Pfukani Cash Loans
+# Pfukani Cash Loans 
 
-A production-ready, multi-page static website built with pure HTML, CSS, and vanilla JavaScript. No build tools or frameworks required.
+The website is Temporarily down
+
+
+<!-- A production-ready, multi-page static website built with pure HTML, CSS, and vanilla JavaScript. No build tools or frameworks required.
 
 ## Setup
 1. Upload the `site/` folder to Netlify.
@@ -14,4 +17,4 @@ A production-ready, multi-page static website built with pure HTML, CSS, and van
 4. HTTPS will be automatically provisioned.
 
 ## Security
-Review `SECURITY.md` for header configurations and policy limits.
+Review `SECURITY.md` for header configurations and policy limits. -->
