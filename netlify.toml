@@ -1,0 +1,8 @@
+[build]
+  publish = "site"
+
+[[redirects]]
+  from = "https://www.pfakuni.co.za/*"
+  to = "https://pfakuni.co.za/:splat"
+  status = 301
+  force = true
