@@ -1,5 +1,22 @@
+# netlify.toml
 [build]
-  publish = "site"
+  publish = "site"          # ← change to "." if index.html is at the repo root
+  command = ""              # ← no build step for a static site
+
+# keep your existing headers and redirects below
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-ancestors 'none'; upgrade-insecure-requests;"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+
+[[redirects]]
+  from = "/process/*"
+  to = "/how-it-works/:splat"
+  status = 301
 
 [[redirects]]
   from = "https://www.pfakuni.co.za/*"
