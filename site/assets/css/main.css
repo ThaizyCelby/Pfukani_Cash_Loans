@@ -194,7 +194,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   50% { transform: translate(30px, -40px) scale(1.1); }
 }
 
-/* Hero grid — desktop stretches both columns to the same height */
+/* Hero grid - desktop stretches both columns to the same height */
 .hero-grid {
   display: grid;
   gap: 2rem;
@@ -250,7 +250,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 100%;
   flex: 1;
   min-height: 420px;
-  background: #0F172A;                  /* dark fallback — never white if clip ever slips */
+  background: #0F172A;                  /* dark fallback - never white if clip ever slips */
   isolation: isolate;                   /* ensures rounded clip applies to children */
 }
 .hero-img-wrap img {
@@ -261,7 +261,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   object-fit: cover;
   object-position: center 25%;
   display: block;
-  border-radius: inherit;               /* rounds the image itself — kills white corners */
+  border-radius: inherit;               /* rounds the image itself - kills white corners */
   transform: scale(1.08);               /* crops white edges further */
   transform-origin: center center;
   -webkit-backface-visibility: hidden;  /* fixes Safari antialiasing artefacts */

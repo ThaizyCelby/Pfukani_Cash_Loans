@@ -1,25 +1,24 @@
-# netlify.toml
 [build]
-  publish = "site"          # ← change to "." if index.html is at the repo root
-  command = ""              # ← no build step for a static site
+  publish = "site"
 
-# keep your existing headers and redirects below
+# ---------------------------------------------------------------------------
+# www → apex redirect (301)
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "https://www.pfukani.co.za/*"
+  to = "https://pfukani.co.za/:splat"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# Global security headers
+# ---------------------------------------------------------------------------
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-ancestors 'none'; upgrade-insecure-requests;"
-    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
-
-[[redirects]]
-  from = "/process/*"
-  to = "/how-it-works/:splat"
-  status = 301
-
-[[redirects]]
-  from = "https://www.pfakuni.co.za/*"
-  to = "https://pfakuni.co.za/:splat"
-  status = 301
-  force = true
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"

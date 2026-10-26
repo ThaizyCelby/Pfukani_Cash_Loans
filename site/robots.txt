@@ -1,3 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
-Sitemap: https://pfakuni.co.za/sitemap.xml
+
+Sitemap: https://pfukani.co.za/sitemap.xml
